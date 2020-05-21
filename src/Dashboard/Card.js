@@ -7,7 +7,7 @@ class Info extends React.Component{
     {
         return(
             <div className = "cd">
-                <Card bg = "primary" text = "white" style = {{width : "15rem"}}>
+                <Card bg = "primary" text = "white" style = {{width : "15rem" , borderRadius :"10px"}}>
                     <Card.Header as="h4">{this.props.item.name}</Card.Header>
                     <Card.Body>
                         <Card.Text>Level      : {this.props.item.level}</Card.Text>

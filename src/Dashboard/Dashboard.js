@@ -4,7 +4,8 @@ import './Dashboard.css'
 import carditems from './CardData.js'
 import Pie from './Pie.js'
 import Column from './Column.js'
-import {Table ,Container , Row , Col , Card} from 'react-bootstrap'
+// import plus from './Images/plus.png'
+import {Table ,Container , Row , Col , Card , Button} from 'react-bootstrap'
 class Dashboard extends React.Component{
     constructor()
     {
@@ -19,15 +20,14 @@ class Dashboard extends React.Component{
         return(
             <div>
               
-             <div className = "d"> 
+             <Card className = "d"> 
+             <Card.Header as = "h4">Projects<Button style = {{marginLeft : "72%" , fontSize : "17px"}}>Create a new Project</Button></Card.Header>
             <Table responsive className = "ProjectCard">
-             
                 {CardComponent}
-                
             </Table>
-            </div>
+            </Card>
             
-            <Container style = {{marginTop : "4%"}}>
+            <Container style = {{marginTop : "4%" , marginBottom : "2%"}}>
           <Row>
               <Col sm = {6} md = {6}>
                 <Card>
@@ -47,7 +47,8 @@ class Dashboard extends React.Component{
               </Col>
           </Row>
           </Container>
-            </div>
+
+      </div>
         )
     }
 }
