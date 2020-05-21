@@ -1,5 +1,15 @@
 .ProjectCard{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top : 4%;
+    
+}
+
+.d{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.cd{
+    margin-right: 2%;
 }

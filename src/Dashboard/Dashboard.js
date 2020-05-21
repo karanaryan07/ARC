@@ -4,7 +4,7 @@ import './Dashboard.css'
 import carditems from './CardData.js'
 import Pie from './Pie.js'
 import Column from './Column.js'
-import {Container , Row , Col , Card} from 'react-bootstrap'
+import {Table ,Container , Row , Col , Card} from 'react-bootstrap'
 class Dashboard extends React.Component{
     constructor()
     {
@@ -18,9 +18,15 @@ class Dashboard extends React.Component{
         const CardComponent = this.state.items.map(item => <Info id = {item.key} item = {item}/>)
         return(
             <div>
-            <div className = "ProjectCard">
+              
+             <div className = "d"> 
+            <Table responsive className = "ProjectCard">
+             
                 {CardComponent}
+                
+            </Table>
             </div>
+            
             <Container style = {{marginTop : "4%"}}>
           <Row>
               <Col sm = {6} md = {6}>
